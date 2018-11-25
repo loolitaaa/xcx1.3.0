@@ -1,0 +1,8 @@
+<import src='./gridtemplate/gridtemplate.wxml'/>
+
+
+<view class='conponent-box'>
+    <view styles="width:100%;height=100%;">
+        <template is='gridtemplate' data="{{pushURL, aspect, minBitrate, maxBitrate, enableCamera, muted, debug,  autoplay, playerMutedStatus, playerVideoStatus, hours, minutes, seconds,accelerateURL,navH}}"/>
+    </view>
+</view>

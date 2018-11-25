@@ -1,0 +1,52 @@
+<template name='gridtemplate'>
+    <view class='grid videoview'>
+        <view class="player-box">
+            <live-player
+                    id="rtcplayer"
+                    autoplay
+                    mode="RTC"
+                    wx:if="{{accelerateURL}}"
+                    object-fit="fillCrop"
+                    min-cache="0.2"
+                    max-cache="0.8"
+                    src="{{accelerateURL}}"
+                    debug="{{debug}}"
+                    background-mute="{{true}}"
+                    bindstatechange="onPlay">
+                <cover-view class='pusher-box'>
+                    <live-pusher wx:if="{{pushURL}}"
+                                 id="rtcpusher"
+                                 autopush
+                                 mode="RTC"
+                                 url="{{pushURL}}"
+                                 aspect="{{aspect}}"
+                                 min-bitrate="{{minBitrate}}"
+                                 max-bitrate="{{maxBitrate}}"
+                                 audio-quality="high"
+                                 muted="{{muted}}"
+                                 waiting-image="https://mc.qcloudimg.com/static/img/daeed8616ac5df256c0591c22a65c4d3/pause_publish.jpg"
+                                 background-mute="{{true}}"
+                                 debug="{{debug}}"
+                                 bindstatechange="onPush"
+                                 binderror="onError">
+                        <cover-image  class='character'  src="/pages/Resources/mask.png"></cover-image>
+                    </live-pusher>
+                </cover-view>
+                <cover-view class="img-box reverse_class">
+                    <cover-image src="../../Resources/camera{{frontCamera ? '':'-gray'}}.png" bindtap="switchCamera"></cover-image>
+                    <!-- <cover-view class="mypadding">翻转</cover-view> -->
+                </cover-view>
+                <cover-view class="close_parent">
+                    <cover-view class='img-box close_class'>
+                        <cover-image class="close_class_img" src="/pages/Resources/phone_close.png" bindtap="quitRoom"></cover-image>
+                        <cover-view class="mypadding"></cover-view>
+                    </cover-view>
+                </cover-view>
+                <cover-view class='character' style='padding: 0 5px;'></cover-view>
+                <cover-view class="remainingTime">剩余时间 {{hours}}:{{minutes}}:{{seconds}}</cover-view>
+                <cover-image  class='character' src="/pages/Resources/mask.png"></cover-image>
+            </live-player>
+        </view>
+    </view>
+</template>
+

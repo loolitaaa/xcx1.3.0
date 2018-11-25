@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "视频问诊",
+  "usingComponents": {
+    "pre-room": "/pages/components/pre-room/pre-room"
+  }
+}

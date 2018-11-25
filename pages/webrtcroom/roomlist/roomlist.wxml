@@ -1,0 +1,6 @@
+
+<view class="container-box" >
+	<view class="camera-box">
+		<webrtc-room id="webrtcroom" template="1v1" autoplay="{{autoplay}}" enableCamera="{{enableCamera}}" roomID="{{roomID}}" userID="{{userID}}" roomCreator="{{roomCreator}}" userSig="{{userSig}}" sdkAppID="{{sdkAppID}}" accountType="{{accountType}}" privateMapKey="{{privateMapKey}}" beauty="{{beauty}}" muted="{{muted}}" debug="{{debug}}" bindRoomEvent="onRoomEvent"></webrtc-room>
+	</view>
+</view>

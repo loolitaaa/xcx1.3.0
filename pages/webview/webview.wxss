@@ -1,0 +1,5 @@
+/* pages/webview/webview.wxss */
+.half{
+    width: 100vw;
+    height: 100vw;
+}

@@ -1,0 +1,51 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": false,
+		"newFeature": true,
+		"nodeModules": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"appid": "wx6d1c8da84265b50b",
+	"projectname": "V1.2.5%2B",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "患者二维码",
+					"pathName": "pages/webrtcroom/roomlist/roomlist",
+					"query": "scene=31100320181125102230709924",
+					"scene": "1012"
+				},
+				{
+					"id": 1,
+					"name": "test1",
+					"pathName": "pages/webrtcroom/roomlist/roomlist",
+					"query": "scene=31100320181120103050302609",
+					"scene": "1011"
+				}
+			]
+		}
+	}
+}

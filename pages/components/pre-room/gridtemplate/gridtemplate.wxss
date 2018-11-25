@@ -1,0 +1,132 @@
+.grid.videoview {
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.grid .pusher-box {
+    position: fixed;
+    top:0;
+    float:right !important;
+    right:0;
+    overflow: hidden;
+    width: 36.8vw;
+    height: 60vw;
+    text-align: center;
+    margin-bottom: 0vw;
+    vertical-align: top;
+}
+
+.grid live-pusher {
+    width: 100%;
+    height: 100%;
+}
+
+.grid .player-box {
+    position: relative;
+    z-index: 0 !important;
+    display: inline-block;
+    overflow: hidden;
+    width: 100vw;
+    height: 200vw;
+    text-align: center;
+    margin-bottom: 0vw;
+    vertical-align: top;
+}
+.grid .player-box:nth-child(2), .grid .player-box:nth-child(4) {
+    margin-left: 0vw;
+}
+
+.grid .poster {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity:0.55;
+}
+
+.grid .set {
+    position: absolute;
+    width: 32px;
+    height: 56px;
+    top: 50%;
+    left: 50%;
+    margin: -28px 0 0 -16px;
+}
+
+.grid live-player {
+    width: 100%;
+    height: 100%;
+}
+
+.grid .character {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 16px;
+    color: #999;
+    width: 100%;
+    height: 10vw;
+    line-height: 10vw;
+    text-align: left;
+}
+
+.grid .loading.quit{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.grid .loading cover-image {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+}
+
+.grid .quit cover-image {
+    position: absolute;
+    top: calc(90% - 15px);
+    left: calc(10% - 15px);
+    width: 30px;
+    height: 30px;
+}
+
+.img-box {
+  display:inline-block;
+  width: 13.6vw;
+  text-align: center;
+  position: fixed;
+}
+.reverse_class{
+  top:0vw;
+  left:0vw;
+  color:#fff;
+  letter-spacing:.5vw;
+}
+.close_class{
+  position:static;
+}
+.remainingTime{
+  position: fixed;
+  width:100%;
+  bottom:36vw;
+  text-align: center;
+  font-size:.8rem;
+  color:#fff;
+}
+.mypadding{
+  padding-top:3vw;
+  font-size:.8rem;
+}
+.close_parent{
+  width:100%;
+  text-align:center;
+  position:fixed;
+  bottom:5vw;
+  color:#fff;
+  letter-spacing:.5vw;
+  height:5rem;
+}

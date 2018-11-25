@@ -1,0 +1,2 @@
+<!--pages/forguests/forguests.wxml-->
+<web-view src="https://qfkj.jiankanghebei.com/InternetHospital/WXController/redirect.do?url=index&clientType=5"></web-view>

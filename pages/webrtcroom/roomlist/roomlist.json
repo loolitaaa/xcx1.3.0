@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "视频问诊",
+  "usingComponents": {
+    "webrtc-room": "/pages/components/webrtc-room/webrtc-room"
+  }
+}
